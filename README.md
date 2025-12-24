@@ -1,19 +1,19 @@
-# 📚 Online Library Management System
+# Online Library Management System
 
-## 📖 Project Overview
+## Project Overview
 The **Online Library Management System** is a web-based platform designed to automate and streamline library operations. It enables **efficient management** of books, members, borrowing transactions, and administrative tasks. The system provides an **intuitive interface** for both librarians (admins) and users, ensuring smooth and effective library operations.
 
 ---
 
-## 🎯 Features
+## Features
 
 ### 🔹 For Admins:
-- 📌 Manage book inventory (**Add, Edit, Remove books**).
-- 📌 Maintain and manage **member records**.
-- 📌 Track and monitor **borrowing & return transactions**.
-- 📌 Manage **book categories, authors, and publishers**.
-- 📌 Generate **reports** on books, members, transactions, and late fees.
-- 📌 Notify users about **book availability, due dates, and fines**.
+- Manage book inventory (**Add, Edit, Remove books**).
+- Maintain and manage **member records**.
+- Track and monitor **borrowing & return transactions**.
+- Manage **book categories, authors, and publishers**.
+- Generate **reports** on books, members, transactions, and late fees.
+- Notify users about **book availability, due dates, and fines**.
 
 ### 🔹 For Library Members:
 - ✅ Register and manage **personal profiles**.
@@ -90,6 +90,30 @@ The **Online Library Management System** is a web-based platform designed to aut
 
 ### 🛠 Flowchart:
 ![image](https://github.com/user-attachments/assets/92f57923-a3c6-4d1e-9ffe-3d33ee508951)
+![image](https://github.com/user-attachments/assets/92f57923-a3c6-4d1e-9ffe-3d33ee508951)
+
+flowchart TD
+    A([START])
+    B[User / Admin Login]
+    C{Is User Admin?}
+
+    A --> B
+    B --> C
+
+    %% Admin Flow
+    C -- Yes --> D[Admin Dashboard]
+    D --> E[Manage Books]
+    D --> F[Manage Users]
+    D --> G[View Transaction Logs]
+
+    %% User Flow
+    C -- No --> H[User Dashboard]
+    H --> I[Search Books]
+    H --> J[Borrow Books]
+    H --> K[View Borrowed Books & Due Dates]
+    H --> L[Return Book / Calculate Fine]
+    L --> M[Send Notifications (Reminders)]
+    M --> N([END])
 
 ---
 
