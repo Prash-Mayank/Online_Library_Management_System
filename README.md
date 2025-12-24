@@ -54,7 +54,7 @@ The **Online Library Management System** is a web-based platform designed to aut
 ### **🔹 Setup Instructions:**
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/mkshahi22/online-library-management-system.git
+   git clone https://github.com/Prash-Mayank/online-library-management-system.git
    ```
 2. Import the project into your IDE (IntelliJ IDEA, Eclipse, or NetBeans).
 3. Configure the MySQL database:
